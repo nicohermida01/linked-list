@@ -7,12 +7,21 @@
 	--white: #fafaff;
 	--successColor: #5fad95;
 	--errorColor: #ee5554;
+	--bgSecondary: #f5f5fd;
 }
 
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
 }
 
 body {
@@ -20,8 +29,75 @@ body {
 	min-height: 100vh;
 	overflow-x: hidden;
 	font-family: 'Poppins', sans-serif;
-	background: linear-gradient(to bottom, #e4ecff, #f2f5fa);
-	padding: 50px 0;
+	background-color: #fff;
+}
+
+.nav-container {
+	width: 100%;
+	top: 0;
+	height: max-content;
+	background-color: var(--bgSecondary);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+	width: 80vw;
+	max-width: 1300px;
+	height: max-content;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 0;
+}
+
+.nav-main {
+	display: flex;
+	gap: 32px;
+}
+
+.nav-main header a {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.nav-main ul {
+	display: flex;
+	gap: 32px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.nav-login {
+	display: flex;
+	gap: 16px;
+}
+
+.nav-login a {
+	padding: 4px 16px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+#signin {
+	background-color: var(--primaryColor);
+	color: #fff;
+	transition: all ease 0.3s;
+}
+
+#signin:hover {
+	background-color: var(--primaryHoverColor);
+}
+
+#login {
+	color: var(--primaryColor);
+	background-color: #fff;
+	border: 1px solid var(--primaryColor);
+	transition: all ease 0.3s;
+}
+
+#login:hover {
+	box-shadow: 0 1px 4px rgba(96, 80, 205, 0.5);
 }
 
 h1 {
@@ -39,6 +115,7 @@ h3 {
 	max-width: 1300px;
 	margin: 0 auto;
 	text-align: center;
+	padding: 50px 0;
 }
 
 .description {
@@ -53,6 +130,7 @@ h3 {
 	padding: 16px;
 	height: max-content;
 	box-shadow: 0 2px 8px rgba(96, 80, 205, 0.5);
+	background-color: #f5f5fd;
 }
 
 .description p span {
@@ -71,6 +149,7 @@ h3 {
 	margin-top: 100px;
 	overflow: hidden;
 	box-shadow: 0 4px 10px rgba(96, 80, 205, 0.5);
+	background-color: #f5f5fd;
 }
 
 .playground-header {

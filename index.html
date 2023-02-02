@@ -14,16 +14,48 @@
 		></script>
 	</head>
 	<body>
+		<div class="nav-container">
+			<nav class="navbar">
+				<div class="nav-main">
+					<header>
+						<a href="#">
+							<i class="fa-solid fa-code"></i>
+							Noob Dev
+						</a>
+					</header>
+					<ul>
+						<li><a href="#">Introduction</a></li>
+						<li><a href="#">Data Types</a></li>
+						<li>
+							<a href="#">
+								Control Structures
+								<i class="fa-solid fa-caret-down"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Data Structures
+								<i class="fa-solid fa-caret-down"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="nav-login">
+					<li><a href="#" id="signin">Sign In</a></li>
+					<li><a href="#" id="login">Log in </a></li>
+				</ul>
+			</nav>
+		</div>
+
 		<div class="container">
-			<h1>Lista Enlazada</h1>
-			<h3>¿Qué es?</h3>
+			<h1>Listas Enlazadas</h1>
+			<h3>¿Qué son?</h3>
 			<div class="description">
 				<p>
 					Una <span>Lista Enlazada</span> es una estructura de datos lineal
 					similar a un Array, pero su diferencia es que los elementos no se
-					guardan en una ubicación de memoria particular. Más bien, cada
-					elemento es un objeto separado que contiene un puntero o link hacia el
-					siguiente objeto en la lista.
+					guardan en una ubicación de memoria particular, y aparte, solo se
+					guarda el espacio ocupado realmente.
 				</p>
 				<i class="fa-solid fa-arrow-right-long"></i>
 				<p>
@@ -67,6 +99,18 @@
 
 							<div class="node">
 								<div class="node-data">2</div>
+								<div class="node-link"></div>
+								<i class="fa-solid fa-arrow-right-long"></i>
+							</div>
+
+							<div class="node">
+								<div class="node-data">3</div>
+								<div class="node-link"></div>
+								<i class="fa-solid fa-arrow-right-long"></i>
+							</div>
+
+							<div class="node">
+								<div class="node-data">4</div>
 								<div class="node-link"></div>
 							</div>
 						</div>
