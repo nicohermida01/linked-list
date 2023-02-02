@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Linked List</title>
+
+		<link rel="stylesheet" href="styles.css" />
+
+		<script
+			src="https://kit.fontawesome.com/32c1bf723a.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Lista Enlazada</h1>
+			<h3>¿Qué es?</h3>
+			<div class="description">
+				<p>
+					Una <span>Lista Enlazada</span> es una estructura de datos lineal
+					similar a un Array, pero su diferencia es que los elementos no se
+					guardan en una ubicación de memoria particular. Más bien, cada
+					elemento es un objeto separado que contiene un puntero o link hacia el
+					siguiente objeto en la lista.
+				</p>
+				<i class="fa-solid fa-arrow-right-long"></i>
+				<p>
+					Cada elemento (comunmente llamados Nodos) contiene dos datos: en
+					primer lugar el dato en particular a guardar, y en segundo el link
+					hacia el siguiente nodo.
+				</p>
+				<i class="fa-solid fa-arrow-right-long"></i>
+				<p>
+					El entry point de una lista enlazada es llamado "head" y contiene la
+					referencia hacia el primer nodo de la lista. El último nodo en la
+					lista apunta a "null". Si una lista esta vacía, el head apunta a
+					"null" también.
+				</p>
+			</div>
+
+			<div class="playground">
+				<div class="playground-header">
+					<i class="fa-solid fa-terminal"></i>Playground
+				</div>
+				<div class="playground-content">
+					<div class="playground-sidebar">
+						<div class="playground-input">
+							<button>Agregar Nodo</button>
+							<input type="text" placeholder="Escribe el dato aquí ..." />
+						</div>
+
+						<div class="playground-input">
+							<button>Eliminar Nodo</button>
+							<input type="text" placeholder="Escribe el dato aquí ..." />
+						</div>
+					</div>
+
+					<div class="playground-right">
+						<div class="playground-display">
+							<div class="node">
+								<div class="node-data">1</div>
+								<div class="node-link"></div>
+								<i class="fa-solid fa-arrow-right-long"></i>
+							</div>
+
+							<div class="node">
+								<div class="node-data">2</div>
+								<div class="node-link"></div>
+							</div>
+						</div>
+
+						<div class="playground-log">
+							<p class="error">[ERROR] Dato incorrecto</p>
+							<p class="success">Nodo agregado correctamente!</p>
+							<p class="success">Se ha eliminado un nodo.</p>
+							<p class="error">[ERROR] Dato incorrecto</p>
+							<p class="error">[ERROR] Dato incorrecto</p>
+							<p class="success">Nodo agregado correctamente!</p>
+							<p class="success">Nodo agregado correctamente!</p>
+							<p class="success">Nodo agregado correctamente!</p>
+							<p class="success">Se ha eliminado un nodo.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
