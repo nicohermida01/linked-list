@@ -9,6 +9,8 @@ const deleteNodeBtn = document.getElementById('deleteNodeBtn')
 const addNodeInput = document.getElementById('addNodeInput')
 const deleteNodeInput = document.getElementById('deleteNodeInput')
 
+const clearListBtn = document.getElementById('clearListBtn')
+
 const playgroundLog = document.getElementById('playgroundLog')
 const playgroundScreen = document.getElementById('playgroundScreen')
 
@@ -41,6 +43,12 @@ deleteNodeBtn.addEventListener('click', () => {
 	}
 
 	deleteNodeInput.value = ''
+})
+
+clearListBtn.addEventListener('click', () => {
+	linkedList.clear()
+	updateList()
+	displayLogMessage('Lista vaciada.', 'normal')
 })
 
 function displayLogMessage(msg, type) {

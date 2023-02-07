@@ -191,6 +191,24 @@ h3 {
 	padding: 0 16px;
 }
 
+.playground-sidebar-button {
+	width: 100%;
+	height: max-content;
+	padding: 8px 16px;
+	border: none;
+	background-color: var(--primaryColor);
+	color: #fff;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 14px;
+	border-radius: 4px;
+}
+
+.playground-sidebar-button:hover {
+	transition: background-color ease 0.3s;
+	background-color: var(--primaryHoverColor);
+}
+
 .playground-input {
 	width: 100%;
 	overflow: hidden;

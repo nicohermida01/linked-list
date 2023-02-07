@@ -7,6 +7,14 @@ export default class LinkedList {
 	}
 
 	/**
+	 * It removes all element from the list
+	 */
+	clear() {
+		this.head = null
+		this.size = 0
+	}
+
+	/**
 	 * It adds an element at the end of the list
 	 * @param {*} data
 	 */
