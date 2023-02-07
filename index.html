@@ -79,57 +79,33 @@
 				<div class="playground-content">
 					<div class="playground-sidebar">
 						<div class="playground-input">
-							<button>Agregar Nodo</button>
-							<input type="text" placeholder="Escribe el dato aquí ..." />
+							<button id="addNodeBtn">Agregar Nodo</button>
+							<input
+								type="text"
+								placeholder="Escribe el dato aquí ..."
+								id="addNodeInput"
+							/>
 						</div>
 
 						<div class="playground-input">
-							<button>Eliminar Nodo</button>
-							<input type="text" placeholder="Escribe el dato aquí ..." />
+							<button id="deleteNodeBtn">Eliminar Nodo</button>
+							<input
+								type="text"
+								placeholder="Escribe el dato aquí ..."
+								id="deleteNodeInput"
+							/>
 						</div>
 					</div>
 
 					<div class="playground-right">
-						<div class="playground-display">
-							<div class="node">
-								<div class="node-data">1</div>
-								<div class="node-link"></div>
-								<i class="fa-solid fa-arrow-right-long"></i>
-							</div>
+						<div class="playground-display" id="playgroundScreen"></div>
 
-							<div class="node">
-								<div class="node-data">2</div>
-								<div class="node-link"></div>
-								<i class="fa-solid fa-arrow-right-long"></i>
-							</div>
-
-							<div class="node">
-								<div class="node-data">3</div>
-								<div class="node-link"></div>
-								<i class="fa-solid fa-arrow-right-long"></i>
-							</div>
-
-							<div class="node">
-								<div class="node-data">4</div>
-								<div class="node-link"></div>
-							</div>
-						</div>
-
-						<div class="playground-log">
-							<p class="error">[ERROR] Dato incorrecto</p>
-							<p class="success">Nodo agregado correctamente!</p>
-							<p class="success">Se ha eliminado un nodo.</p>
-							<p class="error">[ERROR] Dato incorrecto</p>
-							<p class="error">[ERROR] Dato incorrecto</p>
-							<p class="success">Nodo agregado correctamente!</p>
-							<p class="success">Nodo agregado correctamente!</p>
-							<p class="success">Nodo agregado correctamente!</p>
-							<p class="success">Se ha eliminado un nodo.</p>
-						</div>
+						<div class="playground-log" id="playgroundLog"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<script src="main.js"></script>
+		1
+		<script src="main.js" type="module"></script>
 	</body>
 </html>
